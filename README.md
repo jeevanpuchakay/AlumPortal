@@ -1,3 +1,5 @@
+To start contributing to this project initially fork it and run "npm install", after installing the dependencies using npm install run npm start in the terminal. Browser window automatically opens.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
