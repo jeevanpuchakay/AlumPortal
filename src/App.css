@@ -1,3 +1,10 @@
+.navbar-color{
+  background: #3b5998;  /* fallback for old browsers */
+  
+  
+}
+
+
 .App {
   text-align: center;
 }
