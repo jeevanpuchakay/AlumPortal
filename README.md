@@ -1,4 +1,5 @@
 To start contributing to this project initially fork it and run "npm install", after installing the dependencies using npm install run npm start in the terminal. Browser window automatically opens.
+Now start editing and adding the code in src folder.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
