@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar,Nav} from 'react-bootstrap'
+import {Navbar,Nav, Container} from 'react-bootstrap'
 import './../../App.css'
+//import {Grid} from 'styled-css-grid'
 
 
 export default class HomeNavbar extends Component {
@@ -11,14 +12,16 @@ export default class HomeNavbar extends Component {
             <div>
             <Navbar className="navbar-color" style={{height:"80px"}}>
           <img src="https://i.imgur.com/ReBk5qo.jpg?2" alt="alumcell"/>
-          <Navbar.Brand>
+          <Container >
+            <table>
           <h2 className="text-white">
           Alumni portal
         </h2>
         <h3 className="text-white">
           Alumni cell IIT Indore
         </h3>
-         </Navbar.Brand>
+        </table>
+        </Container>
         <Nav className="ml-auto">
           <a class="nav-item nav-link text-white" href="/">
           Link1

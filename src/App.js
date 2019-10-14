@@ -5,11 +5,18 @@ import HomeNavbar from './Components/Navigation/HomeNavbar'
 
 import Organis from './Organis'
 
+//  >
+    
+//import NavigationForRest from './Components/Navigation/NavigationForRest'
+
+
 export default class App extends Component {
   render() {
     return (
       <div>
-        <HomeNavbar/>
+        <div>
+      <HomeNavbar/>
+      </div>
         <Organis/>
       </div>
     )
