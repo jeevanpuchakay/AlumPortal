@@ -7,7 +7,8 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Data from '../Data/FacultyData.json'
+import FacultyData from '../Data/FacultyData.json'
+import BranchData from '../Data/Branches.json'
 
 
 
@@ -41,6 +42,7 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    paddingTop:'80px'
   },
   drawerPaper: {
     width: drawerWidth,
@@ -87,6 +89,7 @@ export default function NavigationForRest() {
         classes={{
           paper: classes.drawerPaper,
         }}
+        style={{paddingTop: '80px'}}
       >
       <Divider/>
       <a href="/Homepage2k19" style={{paddingTop: '80px',textDecoration: 'none',}}>
@@ -99,7 +102,23 @@ export default function NavigationForRest() {
       </text>
        <List>
           {
-            Data.map((text,index) =>(
+            FacultyData.map((text,index) =>(
+            <a href={text.B} style={{ textDecoration: 'none', }}>
+            <ListItem>
+           <ListItemText primary={text.A} styles={{color:'blue'}} />
+           </ListItem>
+           <Divider/>
+            </a>
+            ))
+          }
+       </List>
+       <Divider/>
+       <text style={{fontSize:'20px',marginTop: '20px',}}>
+          BranchWise Students
+      </text>
+      <List>
+          {
+            BranchData.map((text,index) =>(
             <a href={text.B} style={{ textDecoration: 'none', }}>
             <ListItem>
            <ListItemText primary={text.A} styles={{color:'blue'}} />
