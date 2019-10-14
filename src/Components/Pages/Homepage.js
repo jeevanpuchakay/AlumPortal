@@ -6,8 +6,7 @@ import 'react-bootstrap'
 export default class Homepage extends Component {
     render() {
         return (
-            <div>
-                
+            <div><p>
                 <table>
                     <h1 className="text-black text-center">Yearbook Portal </h1>
                     <p className="text-center">
@@ -20,7 +19,10 @@ export default class Homepage extends Component {
                     'NavItem' is defined but never used
                     </p>
                 </table>
-                <Kard/>
+                </p>
+               <a href="/Homepage2k19">
+               <Kard/>
+               </a>
             </div>
         )
     }
