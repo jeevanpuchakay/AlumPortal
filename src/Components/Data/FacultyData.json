@@ -1,14 +1,22 @@
-[
-    {
-        "A":"Message From Director",
-        "B":"/Faculty1"
+[{
+        "A": "Message From Director",
+        "B": "/Faculty1",
+        "C": "Message From Faculty1",
+        "D": "https://image.shutterstock.com/image-photo/university-alumni-graduate-education-message-260nw-559783975.jpg",
+        "E": "Hello from faculty1"
     },
     {
-        "A":"Message From DOAA",
-        "B":"/Faculty2"
+        "A": "Message From DOAA",
+        "B": "/Faculty2",
+        "C": "Message From Faculty2",
+        "D": "https://image.shutterstock.com/image-photo/university-alumni-graduate-education-message-260nw-559783975.jpg",
+        "E": "Hello from faculty1"
     },
     {
-        "A":"Message From AlumniCoOrd",
-        "B":"/Faculty3"
+        "A": "Message From AlumniCoOrd",
+        "B": "/Faculty3",
+        "C": "Message From Faculty3",
+        "D": "https://image.shutterstock.com/image-photo/university-alumni-graduate-education-message-260nw-559783975.jpg",
+        "E": "Hello from faculty1"
     }
 ]
