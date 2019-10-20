@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 import NavigationForRest from '../../Navigation/NavigationForRest'
 import StudentKard from '../../Kards/StudentKard'
-import Cse21People from '../../Data/Cse21People.json'
+import Cse from '../../Data/CSE.json'
+import HomeNavbar from '../../Navigation/HomeNavbar'
 
 
 import {Grid,Cell} from 'styled-css-grid';
 
 
-
+//<hr style={{backgroundColor:'black',color:'black',height:'3px',zIndex:'6'}}/>
 const ColoredLine = ({ color }) => (
     <hr
         style={{
             color: color,
             backgroundColor: color,
-            height: 5
+            height: 2,
         }}
     />
 );
@@ -23,25 +24,35 @@ export default class CSE2k19 extends Component {
     constructor(){
         super() 
           this.state = {
-            data: Cse21People
+            data: Cse
           }}
 
 
     render() {
         return (
             <div>
+                <div style={{position:'fixed',top:'0',width:'100%',zIndex:'3'}}>
+                <HomeNavbar/>
+                </div>
+            <div style={{position:'absolute',top:'0',zIndex:'-1'}}>
             <NavigationForRest />
-            <h1 style={{marginTop:'0px',marginLeft:'240px',alignSelf: 'center'}}>
+            </div>
+            <div style={{marginTop:'0px',marginLeft:'240px',position:'absolute',top:'90px',zIndex:'2'}}>
+            <h1 >
             Computer science Engineering 2019
             </h1>  
-            <ColoredLine color="black" />
-            <div style={{marginTop:'0px',marginLeft:'240px',alignSelf: 'center',justifyContent: 'space-around',overflow: 'auto',}}>
-            <Grid flow="columns" columns={3} style={{rowGap:"30px"}}>
+            </div>
+            <div  style={{position:'absolute',zIndex:'10',marginLeft:'240px',top:'100px'}} >
+            <ColoredLine color="black"/>
+            </div>
+            
+            <div style={{marginTop:'240px',marginLeft:'240px',zIndex:'2'}}>
+            <Grid flow="columns" columns={3} style={{rowGap:"30px",alignSelf: 'center',justifyContent: 'space-around',width:'100%'}}>
                 {
                     this.state.data.map(function(people,index){
                    return(
                     <Cell>
-                        <StudentKard key={people.C} nameOnCard={people.B}/>
+                        <StudentKard key={people.A} nameOnCard={people.B} pc={people.R}/>
                     </Cell>
                    );
                 
