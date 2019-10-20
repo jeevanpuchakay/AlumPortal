@@ -13,7 +13,7 @@ const Kard =(props) =>{
   return (
       <div>
           <Card shadow={5} style={{margin:'auto'}} height="140px">
-            <img src={foto} alt="fato"  style={{width: 275, height: 275, borderRadius: 275/ 2, alignSelf:'center'}} />
+            <img src={props.pc||foto} alt="fato"  style={{width: 275, height: 275, borderRadius: 275/ 2, alignSelf:'center'}} />
             <CardTitle style={{color:'black',dispaly:'flex'}}>
                 <text>{props.nameOnCard}</text>
                 </CardTitle>
