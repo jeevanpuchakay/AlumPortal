@@ -12,12 +12,12 @@ export default class HomeNavbar extends Component {
             <div>
             <Navbar className="navbar-color" style={{height:"80px"}}>
           <img src="https://i.imgur.com/ReBk5qo.jpg?2" alt="alumcell"/>
-          <Container >
+          <Container style={{overflow:'visible'}}>
             <table>
-          <h2 className="text-white">
+          <h2 className="text-white" style={{margin:"0px"}}>
           Alumni portal
         </h2>
-        <h3 className="text-white">
+        <h3 className="text-white" style={{margin:'0px'}}>
           Alumni cell IIT Indore
         </h3>
         </table>
