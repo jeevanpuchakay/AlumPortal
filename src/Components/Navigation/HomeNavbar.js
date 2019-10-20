@@ -9,7 +9,7 @@ import './../../App.css'
 export default class HomeNavbar extends Component {
     render() {
         return (
-            <div>
+            <div style={{margin:'0px'}}>
             <Navbar className="navbar-color" style={{height:"80px"}}>
           <img src="https://i.imgur.com/ReBk5qo.jpg?2" alt="alumcell"/>
           <Container style={{overflow:'visible'}}>
