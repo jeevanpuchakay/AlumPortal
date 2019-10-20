@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Kard from '../Kards/Kardfor2k19'
 import 'react-bootstrap'
+import HomeNavbar from '../Navigation/HomeNavbar'
 
 export default class Homepage extends Component {
     render() {
         return (
-            <div><p>
+            <div>
+                <HomeNavbar />
+                <p>
                 <table>
                     <h1 className="text-black text-center">Yearbook Portal </h1>
                     <p className="text-center">
