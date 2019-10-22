@@ -9,17 +9,20 @@ import './../../App.css'
 export default class HomeNavbar extends Component {
     render() {
         return (
-            <div style={{margin:'0px'}}>
-            <Navbar className="navbar-color" style={{height:"80px"}}>
+            <div style={{margin:'0px',width:'100%'}}>
+            <Navbar className="navbar-color" style={{height:'5%'}}>
           <img src="https://i.imgur.com/ReBk5qo.jpg?2" alt="alumcell"/>
           <Container style={{overflow:'visible'}}>
             <table>
-          <h2 className="text-white" style={{margin:"0px"}}>
+          <text className="text-white" style={{margin:"0px",fontSize:'300%'}}>
           Alumni portal
-        </h2>
-        <h3 className="text-white" style={{margin:'0px'}}>
+        </text>
+        <br />
+        <div style={{marginTop:'5%'}}>
+        <text className="text-white" style={{margin:'0px',fontSize:'200%',}}>
           Alumni cell IIT Indore
-        </h3>
+        </text>
+        </div>
         </table>
         </Container>
         <Nav className="ml-auto">
