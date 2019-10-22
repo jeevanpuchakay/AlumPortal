@@ -1,8 +1,6 @@
 {
   "name": "alum_portal",
   "version": "0.1.0",
-  "homepage": "http://jeevanpuchakay.github.io/AlumPortal/",
-  "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "bootstrap": "^4.3.1",
