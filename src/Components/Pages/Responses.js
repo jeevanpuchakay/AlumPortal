@@ -4,10 +4,11 @@ import {Card,CardText} from 'react-mdl';
 
 
 const Kard =(props) =>{
+    console.log(props.paas)
     return (
         <div>
             <Card shadow={5} style={{margin:'auto'}} height="140px">
-               hello 
+               
           </Card>
           </div>
          )
@@ -18,7 +19,7 @@ const Kard =(props) =>{
 
   /*
 
-
+hello {props}
                 <CardText>
                     {props.paas.a}
                 </CardText>

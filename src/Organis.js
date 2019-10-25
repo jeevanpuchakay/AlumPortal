@@ -25,7 +25,7 @@ export default class Organis extends Component {
                 <Route path="/EE2k19" component={EE2k19}/>
                 <Route path="/MEC2k19" component={MEC2k19}/>
                 {Cse.map((people,index)=>{
-                    return <Route path={"/"+people.A} component={Kard}/>
+                    return <Route path={"/"+people.A} key={index} render={(props)=> <Kard paas={people}/>}/>
                 })}
             </div>
         )
