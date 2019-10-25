@@ -7,15 +7,19 @@ const Kard =(props) =>{
     return (
         <div>
             <Card shadow={5} style={{margin:'auto'}} height="140px">
-                <CardText>
-                    {this.props.q}
-                </CardText>
-                <CardText>
-                    {this.props.a}
-                </CardText>
+               hello 
           </Card>
           </div>
          )
   }
   
   export default Kard;
+
+
+  /*
+
+
+                <CardText>
+                    {props.paas.a}
+                </CardText>
+  */

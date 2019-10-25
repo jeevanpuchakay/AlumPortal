@@ -9,7 +9,8 @@ import CSE2k19 from './Components/Pages/Students.js/CSE2k19'
 import EE2k19 from './Components/Pages/Students.js/EE2k19'
 import MEC2k19 from './Components/Pages/Students.js/MEC2k19'
 //import FacultyData from './Components/Data/FacultyData.json'
-
+import Cse from './Components/Data/CSE.json'
+import Kard from './Components/Pages/Responses'
 
 export default class Organis extends Component {
     render() {
@@ -23,7 +24,9 @@ export default class Organis extends Component {
                 <Route path="/CSE2k19" component={CSE2k19}/>
                 <Route path="/EE2k19" component={EE2k19}/>
                 <Route path="/MEC2k19" component={MEC2k19}/>
-
+                {Cse.map((people,index)=>{
+                    return <Route path={"/"+people.A} component={Kard}/>
+                })}
             </div>
         )
     }

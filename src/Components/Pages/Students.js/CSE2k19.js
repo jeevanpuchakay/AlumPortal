@@ -3,10 +3,11 @@ import NavigationForRest from '../../Navigation/NavigationForRest'
 import StudentKard from '../../Kards/StudentKard'
 import Cse from '../../Data/CSE.json'
 import HomeNavbar from '../../Navigation/HomeNavbar'
-
+import {Route,Link} from 'react-router-dom'
 
 import {Grid,Cell} from 'styled-css-grid';
 
+import Kard from '../Responses'
 
 //<hr style={{backgroundColor:'black',color:'black',height:'3px',zIndex:'6'}}/>
 const ColoredLine = ({ color }) => (
@@ -26,8 +27,6 @@ export default class CSE2k19 extends Component {
           this.state = {
             data: Cse
           }}
-
-
     render() {
         return (
             <div>
@@ -51,9 +50,13 @@ export default class CSE2k19 extends Component {
                 {
                     this.state.data.map(function(people,index){
                    return(
-                    <Cell>
+                   <div>
+                   <Link to={"/"+people.A}>
+                   <Cell>
                         <StudentKard key={people.A} nameOnCard={people.B} pc={people.R}/>
                     </Cell>
+                   </Link>
+                   </div>
                    );
                 
                 })
@@ -65,3 +68,5 @@ export default class CSE2k19 extends Component {
         )
     }
 }
+
+//render={(props)=> <Kard paas={people}/>}
