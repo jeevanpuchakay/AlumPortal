@@ -37,7 +37,7 @@ const Kard =(props) =>{
         <div style={{position:'fixed',top:'0',width:'100%',zIndex:'3'}}>
                 <HomeNavbar/>
                 </div>
-            <div style={{position:'absolute',top:'0',zIndex:'-1'}}>
+            <div style={{position:'absolute',top:'0',zIndex:'2'}}>
             <NavigationForRest />
             </div>
         <Card style={{marginTop:'140px',marginLeft:'320px',width:'75%'}} height="140px" >
@@ -56,7 +56,7 @@ const Kard =(props) =>{
             </Cell>
             </Grid>
         </Card>
-        
+        <div>
         {answers["D"]&&<Responses q={questions.D} a={answers["D"]} style={{width:'100px'}}/>}
         {answers["E"]&&<Responses q={questions.E} a={answers["E"]} style={{height:'auto'}}/>}
         {answers["F"]&&<Responses q={questions.F} a={answers["F"]} style={{height:'auto'}}/>}
@@ -71,7 +71,7 @@ const Kard =(props) =>{
         {answers["O"]&&<Responses q={questions.D} a={answers["D"]} style={{height:'100px'}}/>}
         {answers["P"]&&<Responses q={questions.D} a={answers["D"]} style={{height:'100px'}}/>}
 
-        
+        </div>
        
           </div>
          )

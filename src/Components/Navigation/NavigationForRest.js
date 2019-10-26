@@ -9,7 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import FacultyData from '../Data/FacultyData.json'
 import BranchData from '../Data/Branches.json'
-
+import {Link,withRouter} from 'react-router-dom'
 
 
 
@@ -103,12 +103,12 @@ export default function NavigationForRest() {
        <List>
           {
             FacultyData.map((text,index) =>(
-            <a href={text.B} style={{ textDecoration: 'none', }}>
+            <Link to={text.B} style={{ textDecoration: 'none', }}>
             <ListItem>
            <ListItemText primary={text.A} styles={{color:'blue'}} />
            </ListItem>
            <Divider/>
-            </a>
+            </Link>
             ))
           }
        </List>

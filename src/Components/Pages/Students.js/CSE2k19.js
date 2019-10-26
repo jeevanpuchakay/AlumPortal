@@ -33,10 +33,10 @@ export default class CSE2k19 extends Component {
                 <div style={{position:'fixed',top:'0',width:'100%',zIndex:'3'}}>
                 <HomeNavbar/>
                 </div>
-            <div style={{position:'absolute',top:'0',zIndex:'-1'}}>
+            <div style={{position:'absolute',top:'0',zIndex:'2'}}>
             <NavigationForRest />
             </div>
-            <div style={{marginTop:'0px',marginLeft:'240px',position:'absolute',top:'90px',zIndex:'2'}}>
+            <div style={{marginTop:'0px',marginLeft:'240px',position:'absolute',top:'90px',zIndex:'1'}}>
             <h1 >
             Computer science Engineering 2019
             </h1>  
