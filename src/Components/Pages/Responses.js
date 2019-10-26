@@ -4,7 +4,7 @@ import HomeNavbar from '../Navigation/HomeNavbar'
 import NavigationForRest from '../Navigation/NavigationForRest'
 import {Grid,Cell} from 'styled-css-grid';
 
-
+import ToFriend from '../Data/ToFriend.json'
 import Responses from '../Kards/Responses'
 
 const questions={
@@ -28,6 +28,8 @@ const questions={
 }
 const foto="https://media.gq.com/photos/55828b3f1177d66d68d5287c/master/pass/blogs-the-feed-how-i-met-your-mother-barney-stinson.jpg";
 
+console.log(ToFriend);
+const friend=ToFriend;
 
 const Kard =(props) =>{
     console.log(props.paas)
@@ -70,9 +72,21 @@ const Kard =(props) =>{
         {answers["N"]&&<Responses q={questions.N} a={answers["N"]} style={{height:'100px'}}/>}
         {answers["O"]&&<Responses q={questions.O} a={answers["O"]} style={{height:'100px'}}/>}
         {answers["P"]&&<Responses q={questions.P} a={answers["P"]} style={{height:'100px'}}/>}
-
         </div>
-       
+       <div style={{zIndex:'10'}}>
+           {
+               friend.map((pe)=>{
+               return (pe["D"]===answers["A"])&&(
+                   <div>
+                <h1 style={{marginLeft:'320px'}}> Message from {pe["A"]}</h1>
+              { pe["E"] &&<Responses q={fquestions.E} a={pe["E"]}/>}
+              {pe["F"] &&<Responses q={fquestions.F} a={pe["F"]}/>}
+              {pe["G"] && <Responses q={fquestions.G} a={pe["G"]}/>}
+                  </div>
+               )
+           })
+           }
+       </div>
           </div>
          )
   }
@@ -80,3 +94,23 @@ const Kard =(props) =>{
   export default Kard;
 
 
+const fquestions={
+    "A": "Your Name",
+    "B": "Roll Number",
+    "C": "Your Friend's Name",
+    "D": "His/Her Roll Number",
+    "E": "Your Message",
+    "F": "Nickname ;P",
+    "G": "A theme song describing your friend / friendship"
+  }
+
+  /*
+  {
+               ToFriend.map((people,index)=>{
+                   if(people.D===answers["A"]){
+                       return <div>
+                           hello
+                           </div>
+                   }
+               })
+           }*/
