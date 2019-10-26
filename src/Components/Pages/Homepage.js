@@ -23,7 +23,7 @@ export default class Homepage extends Component {
                     </p>
                 </table>
                 </p>
-               <a href="/Homepage2k19">
+               <a href="/Homepage2k19" style={{textDecoration:'none'}}>
                <Kard/>
                </a>
             </div>

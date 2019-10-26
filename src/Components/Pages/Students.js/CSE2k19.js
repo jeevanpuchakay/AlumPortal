@@ -51,7 +51,7 @@ export default class CSE2k19 extends Component {
                     this.state.data.map(function(people,index){
                    return(
                    <div>
-                   <Link to={"/"+people.A} pass={people}>
+                   <Link to={"/"+people.A} pass={people} style={{textDecoration:'none'}}>
                    <Cell>
                         <StudentKard key={people.A} nameOnCard={people.B} pc={people.R}/>
                     </Cell>
