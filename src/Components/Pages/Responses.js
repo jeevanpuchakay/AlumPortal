@@ -67,9 +67,9 @@ const Kard =(props) =>{
         {answers["K"]&&<Responses q={questions.K} a={answers["K"]} style={{height:'100px'}}/>}
         {answers["L"]&&<Responses q={questions.L} a={answers["L"]} style={{height:'100px'}}/>}
         {answers["M"]&&<Responses q={questions.M} a={answers["M"]} style={{height:'100px'}}/>}
-        {answers["N"]&&<Responses q={questions.D} a={answers["D"]} style={{height:'100px'}}/>}
-        {answers["O"]&&<Responses q={questions.D} a={answers["D"]} style={{height:'100px'}}/>}
-        {answers["P"]&&<Responses q={questions.D} a={answers["D"]} style={{height:'100px'}}/>}
+        {answers["N"]&&<Responses q={questions.N} a={answers["N"]} style={{height:'100px'}}/>}
+        {answers["O"]&&<Responses q={questions.O} a={answers["O"]} style={{height:'100px'}}/>}
+        {answers["P"]&&<Responses q={questions.P} a={answers["P"]} style={{height:'100px'}}/>}
 
         </div>
        
