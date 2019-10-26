@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Card,CardTitle} from 'react-mdl';
+import {Card} from 'react-mdl';
 
 
 

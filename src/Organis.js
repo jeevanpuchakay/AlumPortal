@@ -10,6 +10,8 @@ import EE2k19 from './Components/Pages/Students.js/EE2k19'
 import MEC2k19 from './Components/Pages/Students.js/MEC2k19'
 //import FacultyData from './Components/Data/FacultyData.json'
 import Cse from './Components/Data/CSE.json'
+import Ee from './Components/Data/EE.json'
+import Mec from './Components/Data/MEC.json'
 import Kard from './Components/Pages/Responses'
 
 export default class Organis extends Component {
@@ -27,6 +29,12 @@ export default class Organis extends Component {
                 <Route path="/MEC2k19" component={MEC2k19}/>
                 </Switch>
                 {Cse.map((people,index)=>{
+                    return <Switch><Route path={"/"+people.A} key={index} render={(props)=> <Kard paas={people}/>}/></Switch>
+                })}
+                {Ee.map((people,index)=>{
+                    return <Switch><Route path={"/"+people.A} key={index} render={(props)=> <Kard paas={people}/>}/></Switch>
+                })}
+                {Mec.map((people,index)=>{
                     return <Switch><Route path={"/"+people.A} key={index} render={(props)=> <Kard paas={people}/>}/></Switch>
                 })}
             </div>

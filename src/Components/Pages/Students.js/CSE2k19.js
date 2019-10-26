@@ -3,11 +3,11 @@ import NavigationForRest from '../../Navigation/NavigationForRest'
 import StudentKard from '../../Kards/StudentKard'
 import Cse from '../../Data/CSE.json'
 import HomeNavbar from '../../Navigation/HomeNavbar'
-import {Route,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import {Grid,Cell} from 'styled-css-grid';
 
-import Kard from '../Responses'
+//import Kard from '../Responses'
 
 //<hr style={{backgroundColor:'black',color:'black',height:'3px',zIndex:'6'}}/>
 const ColoredLine = ({ color }) => (
@@ -37,7 +37,7 @@ export default class CSE2k19 extends Component {
             <NavigationForRest />
             </div>
             <div style={{marginTop:'0px',marginLeft:'240px',position:'absolute',top:'90px',zIndex:'1'}}>
-            <h1 >
+            <h1 style={{marginLeft:'190px'}}>
             Computer science Engineering 2019
             </h1>  
             </div>
