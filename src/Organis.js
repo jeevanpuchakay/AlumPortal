@@ -6,6 +6,7 @@ import Faculty1 from './Components/Pages/Faculty1'
 import Faculty2 from './Components/Pages/Faculty2'
 import Faculty3 from './Components/Pages/Faculty3'
 import CSE2k19 from './Components/Pages/Students.js/CSE2k19'
+import CSE2k19U from './Components/Pages/Students.js/CSE2k19U'
 import EE2k19 from './Components/Pages/Students.js/EE2k19'
 import MEC2k19 from './Components/Pages/Students.js/MEC2k19'
 //import FacultyData from './Components/Data/FacultyData.json'
@@ -22,6 +23,7 @@ export default class Organis extends Component {
                 <Route path="/Faculty2" component={Faculty2}/>
                 <Route path="/Faculty3" component={Faculty3}/>
                 <Route path="/CSE2k19" component={CSE2k19}/>
+                <Route path="/CSE2k19U" component={CSE2k19U}/>
                 <Route path="/EE2k19" component={EE2k19}/>
                 <Route path="/MEC2k19" component={MEC2k19}/>
                 {Cse.map((people,index)=>{
