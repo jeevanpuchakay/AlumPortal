@@ -8,6 +8,7 @@ require('dotenv').config();
 
 const app=express();
 
+
 const port=process.env.PORT||5000;
 
 app.use(cors());
@@ -30,3 +31,8 @@ connection.once('open',()=>{
 app.listen(port,()=>{
     console.log(`Listening to port ${port}`)
 })
+
+
+const Student=require('./routes/Students');
+
+app.use('/students',Student);
