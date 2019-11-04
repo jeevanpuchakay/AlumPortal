@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AlumPortal/static/css/main.48ca2bfc.chunk.css",
-    "main.js": "/AlumPortal/static/js/main.d7971089.chunk.js",
-    "main.js.map": "/AlumPortal/static/js/main.d7971089.chunk.js.map",
+    "main.js": "/AlumPortal/static/js/main.d986b6d9.chunk.js",
+    "main.js.map": "/AlumPortal/static/js/main.d986b6d9.chunk.js.map",
     "runtime-main.js": "/AlumPortal/static/js/runtime-main.45efbc8e.js",
     "runtime-main.js.map": "/AlumPortal/static/js/runtime-main.45efbc8e.js.map",
     "static/css/2.6493db97.chunk.css": "/AlumPortal/static/css/2.6493db97.chunk.css",
-    "static/js/2.9d0a9980.chunk.js": "/AlumPortal/static/js/2.9d0a9980.chunk.js",
-    "static/js/2.9d0a9980.chunk.js.map": "/AlumPortal/static/js/2.9d0a9980.chunk.js.map",
+    "static/js/2.e1da175b.chunk.js": "/AlumPortal/static/js/2.e1da175b.chunk.js",
+    "static/js/2.e1da175b.chunk.js.map": "/AlumPortal/static/js/2.e1da175b.chunk.js.map",
     "index.html": "/AlumPortal/index.html",
-    "precache-manifest.35dc125fe521218a9461487119dc8c5a.js": "/AlumPortal/precache-manifest.35dc125fe521218a9461487119dc8c5a.js",
+    "precache-manifest.57a4316dc2bd78f34b8e36d4ae587b56.js": "/AlumPortal/precache-manifest.57a4316dc2bd78f34b8e36d4ae587b56.js",
     "service-worker.js": "/AlumPortal/service-worker.js",
     "static/css/2.6493db97.chunk.css.map": "/AlumPortal/static/css/2.6493db97.chunk.css.map",
     "static/css/main.48ca2bfc.chunk.css.map": "/AlumPortal/static/css/main.48ca2bfc.chunk.css.map"
@@ -17,8 +17,8 @@
   "entrypoints": [
     "static/js/runtime-main.45efbc8e.js",
     "static/css/2.6493db97.chunk.css",
-    "static/js/2.9d0a9980.chunk.js",
+    "static/js/2.e1da175b.chunk.js",
     "static/css/main.48ca2bfc.chunk.css",
-    "static/js/main.d7971089.chunk.js"
+    "static/js/main.d986b6d9.chunk.js"
   ]
 }
