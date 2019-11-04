@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AlumPortal/precache-manifest.57a4316dc2bd78f34b8e36d4ae587b56.js"
+  "/AlumPortal/precache-manifest.2a1b79a778a10e0ff3bbc5a392db37b0.js"
 );
 
 self.addEventListener('message', (event) => {

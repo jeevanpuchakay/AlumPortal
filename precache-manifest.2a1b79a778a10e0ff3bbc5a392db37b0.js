@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94ee58ab710708605c4f7b47e72b54ed",
+    "revision": "91d068de969ba8575caa18b708dccdff",
     "url": "/AlumPortal/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AlumPortal/static/css/2.6493db97.chunk.css"
   },
   {
-    "revision": "a364f11cd4337d1ea44d",
+    "revision": "de701beef9019b08f832",
     "url": "/AlumPortal/static/css/main.48ca2bfc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AlumPortal/static/js/2.e1da175b.chunk.js"
   },
   {
-    "revision": "a364f11cd4337d1ea44d",
-    "url": "/AlumPortal/static/js/main.d986b6d9.chunk.js"
+    "revision": "de701beef9019b08f832",
+    "url": "/AlumPortal/static/js/main.a3e60cce.chunk.js"
   },
   {
     "revision": "577d9fdae55c578be54a",
