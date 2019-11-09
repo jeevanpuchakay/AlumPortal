@@ -42,7 +42,6 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    paddingTop:'80px'
   },
   drawerPaper: {
     width: drawerWidth,
@@ -89,11 +88,11 @@ export default function NavigationForRest() {
         classes={{
           paper: classes.drawerPaper,
         }}
-        style={{paddingTop: '80px'}}
+        style={{paddingTop: '10rem'}}
       >
       <Divider/>
-      <a href="/Homepage2k19" style={{paddingTop: '80px',textDecoration: 'none',}}>
-      <text style={{textDecorationStyle:'solid',fontSize:'30px'}}>
+      <a href="/Homepage2k19" style={{textDecoration: 'none',marginTop:'7.5rem'}}>
+      <text style={{textDecorationStyle:'solid',fontSize:'30px',}}>
       Yearbook 2K19
       </text>
       </a>
