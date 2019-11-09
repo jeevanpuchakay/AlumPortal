@@ -7,6 +7,7 @@ import './../../App.css'
 
 
 const logo="https://i.imgur.com/x6rronw.jpg?3";
+const home="http://www.iiti.ac.in/";
 
 export default class HomeNavbar extends Component {
     render() {
@@ -27,15 +28,15 @@ export default class HomeNavbar extends Component {
         </div>
         </table>
         </Container>
-        <Nav className="ml-auto">
-          <a class="nav-item nav-link text-white" href="/">
-          Link1
+        <Nav className="ml-auto" style={{marginRight:'1rem'}}>
+          <a class="nav-item nav-link text-white" href={home}>
+         Home
           </a>
           <a class="nav-item nav-link text-white" href="/">
-          Link2
+          Alumni Cell
           </a>
           <a class="nav-item nav-link text-white" href="/">
-          Link3
+          Alumni Portal
           </a>
         </Nav>
         </Navbar> 
