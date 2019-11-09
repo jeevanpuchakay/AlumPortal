@@ -11,7 +11,7 @@ export default class Homepage2k19 extends Component {
     render() {
         return (
             <div style={{marginTop:"0px",overflow:'visible',paddingTop:'0px'}}>
-            <div  style={{paddingTop:'0px',zIndex:'3',position:'fixed',width:"100%"}}>
+            <div  style={{zIndex:'3',position:'fixed',width:"100%"}}>
             <HomeNavbar/>
             </div>
             <div  style={{zIndex: "1",position:'absolute'}}>
