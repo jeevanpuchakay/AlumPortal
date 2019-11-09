@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom'
 
 
 
-const drawerWidth = 240;
+const drawerWidth = '14.5rem';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -91,12 +91,7 @@ export default function NavigationForRest() {
         style={{paddingTop: '10rem'}}
       >
       <Divider/>
-      <a href="/Homepage2k19" style={{textDecoration: 'none',marginTop:'7.5rem'}}>
-      <text style={{textDecorationStyle:'solid',fontSize:'30px',}}>
-      Yearbook 2K19
-      </text>
-      </a>
-      <text style={{fontSize:'20px'}}>
+      <text style={{fontSize:'20px',marginTop:'7.5rem',alignContent: 'center',justifyContent:'center',display:'flex'}}>
           Contents
       </text>
        <List>
