@@ -70,7 +70,7 @@ export default class Homepage extends Component {
                             </Link>
                             </Row> 
                             <Row style={{ marginTop: '0rem',fontSize:'1rem',color:'white' }}>
-                                Mail:coordinatoralumni@iiti.ac.in
+                                Mail :  coordinatoralumni@iiti.ac.in
                             </Row>  
                            </Col>
                        </Row>
