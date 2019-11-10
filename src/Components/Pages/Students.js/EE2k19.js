@@ -5,11 +5,16 @@ import EE from '../../Data/EE.json'
 import HomeNavbar from '../../Navigation/HomeNavbar'
 import {Link} from 'react-router-dom'
 
+
+
+import Footer from './../../Kards/Footer'
+import { Container,Col,Row } from 'react-bootstrap'
 import {Grid,Cell} from 'styled-css-grid';
 
 //import Kard from '../Responses'
 
 //<hr style={{backgroundColor:'black',color:'black',height:'3px',zIndex:'6'}}/>
+/*
 const ColoredLine = ({ color }) => (
     <hr
         style={{
@@ -19,7 +24,7 @@ const ColoredLine = ({ color }) => (
         }}
     />
 );
-
+*/
 export default class EE2k19 extends Component {
     
     constructor(){
@@ -30,23 +35,21 @@ export default class EE2k19 extends Component {
     render() {
         return (
             <div>
-                <div style={{position:'fixed',top:'0',width:'100%',zIndex:'3'}}>
-                <HomeNavbar/>
-                </div>
-            <div style={{position:'absolute',top:'0',zIndex:'2'}}>
-            <NavigationForRest />
+            <div  style={{marginTop:'0',zIndex:'5',position:'fixed',width:"100%"}}>
+            <HomeNavbar/>
             </div>
-            <div style={{marginTop:'0px',marginLeft:'240px',position:'absolute',top:'90px',zIndex:'1'}}>
-            <h1 style={{marginLeft:'190px'}} >
-            Electrical Engineering 2019
-            </h1>  
+            <div  style={{zIndex: "1",position:'absolute'}}>
+            <NavigationForRest/>
             </div>
-            <div  style={{position:'absolute',zIndex:'10',marginLeft:'240px',top:'100px'}} >
-            <ColoredLine color="black"/>
-            </div>
-            
-            <div style={{marginTop:'240px',marginLeft:'240px',zIndex:'2'}}>
-            <Grid flow="columns" columns={3} style={{rowGap:"30px",alignSelf: 'center',justifyContent: 'space-around',width:'100%'}}>
+            <Container style={{zIndex:'3',position:'absolute',marginTop:'10rem',marginLeft:'44rem'}}>
+               <Col>
+               <Row>
+           <h3 style={{textAlign:'center'}}>Electrical Branch</h3>
+           </Row>
+           </Col>
+           </Container>
+           <div style={{paddingTop:'16rem',marginLeft:'18rem'}}>
+           <Grid flow="columns" columns={3} style={{rowGap:"30px",alignSelf: 'center',justifyContent: 'space-around',width:'100%'}}>
                 {
                     this.state.data.map(function(people,index){
                    return(
@@ -62,6 +65,9 @@ export default class EE2k19 extends Component {
                 })
                 }
             </Grid>
+               </div>
+           <div style={{zIndex:'2',position: 'absolute',}}>
+                <Footer/>
                 </div>
 
             </div>
