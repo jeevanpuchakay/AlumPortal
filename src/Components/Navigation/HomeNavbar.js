@@ -17,11 +17,10 @@ export default class HomeNavbar extends Component {
           <img src={logo} alt="alumcell"/>
           <Container style={{overflow:'visible',marginLeft:'2rem'}}>
             <table>
-          <text className="text-white" style={{margin:"0px",fontSize:'2.5rem'}}>
+          <text className="text-white" style={{marginTop:'.5rem',fontSize:'2.5rem'}}>
           Yearbook portal
         </text>
-        <br />
-        <div style={{marginTop:'auto'}}>
+        <div style={{marginTop:'1rem'}}>
         <text className="text-white" style={{margin:'0px',fontSize:'2rem',}}>
           Alumni cell IIT Indore
         </text>
