@@ -46,9 +46,9 @@ export default class Footer extends Component {
                                 Room No:511 Chromium Building(Pod1D)
                             </Row>
                             <Row style={{ marginTop: '0rem',fontSize:'1rem',color:'white' }}>
-                                <Link to={website} style={{textDecoration:'none',color:'white'}}>
+                                <a href={website} style={{textDecoration:'none',color:'white'}}>
                                 IIT Indore
-                            </Link>
+                            </a>
                             </Row> 
                             <Row style={{ marginTop: '0rem',fontSize:'1rem',color:'white' }}>
                                 Mail :  coordinatoralumni@iiti.ac.in
