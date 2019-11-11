@@ -32,7 +32,6 @@ console.log(ToFriend);
 const friend=ToFriend;
 
 const Kard =(props) =>{
-    console.log(props.paas)
     var answers=props.paas;
     return (
         <div>
