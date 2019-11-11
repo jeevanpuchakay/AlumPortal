@@ -13,6 +13,8 @@ import Cse from './Components/Data/CSE.json'
 import Ee from './Components/Data/EE.json'
 import Mec from './Components/Data/MEC.json'
 import Kard from './Components/Pages/Responses'
+import Gallery from './Components/Pages/Gallery'
+
 
 export default class Organis extends Component {
     render() {
@@ -27,6 +29,7 @@ export default class Organis extends Component {
                 <Route path="/CSE2k19" component={CSE2k19}/>
                 <Route path="/EE2k19" component={EE2k19}/>
                 <Route path="/MEC2k19" component={MEC2k19}/>
+                <Route path="/Gallery" component={Gallery}/>
                 </Switch>
                 {Cse.map((people,index)=>{
                     return <Switch><Route path={"/"+people.A} key={index} render={(props)=> <Kard paas={people}/>}/></Switch>
