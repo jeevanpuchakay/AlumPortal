@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 
 import { Container,Col,Row } from 'react-bootstrap'
 
-import {Grid,Cell} from 'styled-css-grid';
+//import {Grid,Cell} from 'styled-css-grid';
 
 import Footer from './../../Kards/Footer'
 
@@ -56,23 +56,24 @@ export default class MEC2k19 extends Component {
            </Row>
            </Col>
            </Container>
-           <div style={{paddingTop:'16rem',marginLeft:'18rem'}}>
-           <Grid flow="columns" columns={3} style={{rowGap:"30px",alignSelf: 'center',justifyContent: 'space-around',width:'100%'}}>
+           <div style={{paddingTop:'16rem',marginLeft:'16rem',marginRight:'0rem'}}>
+           <Container>
+               <Row className="show-grid">
                 {
                     this.state.data.map(function(people,index){
                    return(
-                   <div>
                    <Link to={"/"+people.A} pass={people} style={{textDecoration:'none'}}>
-                   <Cell>
+                   <Col sm style={{padding:'1.5rem',}}>
                         <StudentKard key={people.A} nameOnCard={people.B} pc={people.R}/>
-                    </Cell>
+                    </Col>
                    </Link>
-                   </div>
+                  
                    );
                 
                 })
                 }
-            </Grid>
+                </Row>
+            </Container>
                </div>
            <div style={{zIndex:'2',position: 'absolute',}}>
                 <Footer/>
