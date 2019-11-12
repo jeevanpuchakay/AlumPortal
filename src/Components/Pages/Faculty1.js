@@ -21,11 +21,21 @@ class Faculty1 extends Component {
             <NavigationForRest/>
             </div>
            <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'10rem'}}>
-               <Col>
-               <Row>
-           <h3 style={{display:'flex',marginLeft:'20rem'}}>Message From Alumni Coordinator</h3>
-           </Row>
+              <Row>
+              <Col sm>
            </Col>
+               <Col sm="auto">
+           <h3>Message From Alumni Coordinator</h3>
+           </Col>
+           <Col sm>
+           </Col>
+           </Row>
+           <Row>
+               <Col sm="auto">
+               <img src="https://i.imgur.com/qDJMbSw.jpg" style={{marginLeft:'22rem'}} alt="Vivek" />
+           </Col>
+           
+           </Row>
            </Container>
            <div style={{zIndex:'10',position:'absolute',marginTop:'80rem'}}>
            <Footer />
@@ -36,3 +46,6 @@ class Faculty1 extends Component {
 }}
 
 export default Faculty1;
+
+//<Row>
+ //          </Row>
