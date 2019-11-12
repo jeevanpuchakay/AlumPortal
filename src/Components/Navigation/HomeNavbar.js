@@ -6,7 +6,7 @@ import './../../App.css'
 //import {Grid} from 'styled-css-grid'
 
 
-const logo="https://i.imgur.com/x6rronw.jpg?3";
+const logo="https://i.imgur.com/rPWEd9x.jpg";
 const home="http://www.iiti.ac.in/";
 
 export default class HomeNavbar extends Component {
@@ -14,7 +14,7 @@ export default class HomeNavbar extends Component {
         return (
             <div style={{margin:'0px',width:'100%'}}>
             <Navbar className="navbar-color" style={{height:'7rem'}}>
-          <img src={logo} alt="alumcell"/>
+          <img src={logo} alt="alumcell" style={{height:'7rem',width:'8rem'}}/>
           <Container style={{overflow:'visible',marginLeft:'2rem'}}>
             <table>
           <text className="text-white" style={{marginTop:'.5rem',fontSize:'2.5rem'}}>
