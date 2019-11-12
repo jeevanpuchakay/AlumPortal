@@ -26,7 +26,11 @@ class Faculty2 extends Component {
            <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'10rem'}}>
                <Col>
                <Row>
-           <h3 style={{display:'flex',marginLeft:'20rem'}}>Message From Team</h3>
+                   <Col sm></Col>
+                   <Col sm="auto">
+           <h3>Message From Team</h3>
+           </Col>
+           <Col sm></Col>
            </Row>
            </Col>
            </Container>

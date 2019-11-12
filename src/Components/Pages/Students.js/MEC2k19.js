@@ -49,10 +49,14 @@ export default class MEC2k19 extends Component {
             <div  style={{zIndex: "1",position:'absolute'}}>
             <NavigationForRest/>
             </div>
-            <Container style={{zIndex:'3',position:'absolute',marginTop:'10rem',marginLeft:'44rem'}}>
-               <Col>
+            <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'10rem'}}>
+              <Col>
                <Row>
+                   <Col sm></Col>
+               <Col sm="auto">
            <h3 style={{textAlign:'center'}}>Mechanical Branch</h3>
+           </Col>
+           <Col sm></Col>
            </Row>
            </Col>
            </Container>
