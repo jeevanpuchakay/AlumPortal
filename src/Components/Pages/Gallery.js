@@ -36,15 +36,17 @@ export default class Gallery extends Component {
            </Row>
            </Col>
            </Container>
-           <div style={{position:'absolute',marginTop:'12rem',marginLeft:'22rem'}}>
-               <Container style={{zIndex:'5',position:'absolute'}}>
+           <div style={{paddingTop:'12rem',marginLeft:'22rem',marginRight:'0rem'}}>
+               <Container>
                <Row className="show-grid">
                   {
                       load.map((data,index)=>{
                           return(   
+                   <div>
                    <Col sm style={{paddingTop:'5rem'}}>
-                       <GalleryKard packet={data.A}/>
+                       <GalleryKard packet={data.A} key={data.A}/>
                    </Col>
+                   </div>
                           )
                       })
                   }

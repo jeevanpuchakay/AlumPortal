@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 //import HomeNavbar from './Components/Navigation/HomeNavbar'
 
 import Organis from './Organis'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // <HomeNavbar/> >
     
 //import NavigationForRest from './Components/Navigation/NavigationForRest'
