@@ -47,7 +47,7 @@ class Faculty2 extends Component {
                <Row><text style={{fontSize:'2rem',fontFamily:'arial'}}>{pa9}</text></Row>
      </Container>
            </div>
-           <div style={{zIndex:'10',position:'absolute',marginTop:'80rem'}}>
+           <div style={{zIndex:'10',position:'absolute',marginTop:'280rem'}}>
            <Footer />
            </div>
             </div>

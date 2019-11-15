@@ -97,9 +97,9 @@ export default function NavigationForRest() {
        <List>
           {
             FacultyData.map((text,index) =>(
-            <Link to={text.B} style={{ textDecoration: 'none', }}>
+            <Link to={text.B} style={{ textDecoration: 'none',color:'black',fontFamily:'bold' }}>
             <ListItem>
-           <ListItemText primary={text.A} styles={{color:'blue'}} />
+           <ListItemText primary={text.A} styles={{color:'black'}} />
            </ListItem>
            <Divider/>
             </Link>

@@ -13,8 +13,8 @@ export default class GalleryKard extends Component {
     render() {
         return (
             <div>
-            <Card shadow={5} style={{margin:'auto',height:'20rem',width:'20rem'}}>
-            <img src={this.state.data||foto} alt="fato"  style={{ alignSelf:'center',height:'20rem',width:'20rem'}} />
+            <Card shadow={5} style={{margin:'auto',height:'25rem',width:'25rem'}}>
+            <img src={this.state.data||foto} alt="fato"  style={{ alignSelf:'center',height:'25rem',width:'25rem'}} />
         </Card>
             </div>
         )

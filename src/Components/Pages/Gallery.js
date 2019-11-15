@@ -22,18 +22,22 @@ export default class Gallery extends Component {
             <div  style={{marginTop:'0',zIndex:'5',position:'fixed',width:"100%"}}>
             <HomeNavbar/>
             </div>
-            <div  style={{zIndex: "1",position:'absolute'}}>
+            <div  style={{zIndex: "4",position:'absolute'}}>
             <NavigationForRest/>
             </div>
-            <Container style={{zIndex:'3',position:'absolute',marginTop:'8rem',marginLeft:'52rem'}}>
-               <Col>
+            <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'10rem'}}>
+             <Col>
                <Row>
+                   <Col sm></Col>
+               <Col sm="auto">
            <h3 style={{textAlign:'center'}}>Gallery</h3>
+           </Col>
+           <Col sm></Col>
            </Row>
            </Col>
            </Container>
-           <div style={{zIndex:'3',position:'absolute',marginTop:'12rem',marginLeft:'22rem'}}>
-               <Container>
+           <div style={{position:'absolute',marginTop:'12rem',marginLeft:'22rem'}}>
+               <Container style={{zIndex:'5',position:'absolute'}}>
                <Row className="show-grid">
                   {
                       load.map((data,index)=>{
@@ -48,7 +52,7 @@ export default class Gallery extends Component {
                </Container>
            </div>
            
-           <div style={{zIndex:'2',position: 'absolute',marginTop:'190rem'}}>
+           <div style={{zIndex:'2',position: 'absolute',paddingTop:'300rem'}}>
                 <Footer/>
                 </div>
             </div>

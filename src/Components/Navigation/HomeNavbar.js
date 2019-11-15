@@ -15,16 +15,16 @@ export default class HomeNavbar extends Component {
             <div style={{margin:'0px',width:'100%'}}>
             <Navbar className="navbar-color" style={{height:'7rem'}}>
           <img src={logo} alt="alumcell" style={{height:'7rem',width:'8rem'}}/>
-          <Container style={{overflow:'visible',marginLeft:'2rem'}}>
+          <Container style={{overflow:'visible',marginLeft:'2rem',height:'7rem'}}>
             <table>
-          <text className="text-white" style={{marginTop:'.5rem',fontSize:'2.5rem'}}>
+          <text className="text-white" style={{marginTop:'.5rem',fontSize:'2rem'}}>
           Yearbook portal
         </text>
-        <div style={{marginTop:'1rem'}}>
-        <text className="text-white" style={{margin:'0px',fontSize:'2rem',}}>
-          Alumni cell IIT Indore
+        <div><br/></div>
+        <text className="text-white" style={{fontSize:'1.5rem',}}>
+         Alumni cell IIT Indore
         </text>
-        </div>
+        
         </table>
         </Container>
         <Nav className="ml-auto" style={{marginRight:'1rem'}}>
