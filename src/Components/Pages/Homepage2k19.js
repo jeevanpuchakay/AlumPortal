@@ -27,14 +27,23 @@ export default class Homepage2k19 extends Component {
             <div  style={{zIndex: "1",position:'absolute'}}>
             <NavigationForRest/>
             </div>
-           <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'10rem'}}>
-               <Col>
+            <Container style={{zIndex:'3',position:'absolute',marginLeft:'18rem',marginTop:'7rem'}}>
+              <Row>
+              <Col>
                <Row>
-           <h3 style={{alignContent: 'center',justifyContent:'center',display:'flex'}}> YearBook 2K19 Batch</h3>
-           </Row><Row>
-           <img src={Picture} alt="all" />
+                   <Col sm></Col>
+               <Col sm="auto">
+           <h3 style={{textAlign:'center'}}>YearBook 
+               <br/>
+               Class of 2K19</h3>
+           </Col>
+           <Col sm></Col>
            </Row>
            </Col>
+              </Row>
+              <Row>
+              <img src={Picture} style={{height:'50rem',width:'90rem'}} alt="all" />
+              </Row>
            </Container>
           
            <div style={{zIndex:'10',position:'absolute',marginTop:'80rem'}}>
